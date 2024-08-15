@@ -27,7 +27,10 @@ public class StudentController {
 	public Map<String, List<Student>> setStudentInfo()
 	{
 		List<Student> studentsUnderID001 = new ArrayList<Student>();
-		studentsUnderID001.add(new Student("Sraddha","Chakraborty"));
+		studentsUnderID001.add(Student.builder()
+				.firstName("Sraddha")
+				.lastName("Chakraborty")
+				.build());
 		studentsUnderID001.add(new Student("Boo","Boy"));
 		studentsUnderID001.add(new Student ("Blinky","Saha"));
 		
